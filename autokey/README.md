@@ -4,7 +4,7 @@ These `autokey` settings make keyboard shortcuts in Kubuntu behave like in a Mac
 
 ## Installation
 
-0. Install `autokey`. Add it to autostart. Switch keyboard to 
+0. Install `autokey`. Add it to autostart. Switch keyboard to Apple Aluminium Keyboard (ANSI) in `Settings > Input Devices`.
 1. Quit `autokey` if it's already running.
 2. Backup existing settings in `~/.config/autokey`.
 3. Git clone this repository.

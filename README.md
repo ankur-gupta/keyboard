@@ -1,1 +1,1 @@
-# Keyboard settings for Kubuntu
+# Keyboard settings for MacOS and Kubuntu
