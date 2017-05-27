@@ -4,15 +4,17 @@ These `autokey` settings make keyboard shortcuts in Kubuntu behave like in a Mac
 
 ## Installation
 
-0. Install `autokey`. Add it to autostart. Switch keyboard to Apple Aluminium Keyboard (ANSI) in `Settings > Input Devices`.
-1. Quit `autokey` if it's already running.
-2. Backup existing settings in `~/.config/autokey`.
-3. Git clone this repository.
-4. Put this folder, named `autokey`, inside `~/.config` replacing existing 
+0. Install `autokey`. For KDE `autokey-qt` is the preferred package to install (using `sudo apt install autokey-qt`) but this package sometimes has [segmentation faults on start](https://bugs.launchpad.net/ubuntu/+source/autokey/+bug/1633379). Install `autokey-gtk` (using `sudo apt install autokey-gtk`).
+1. Add it to autostart. Switch keyboard to Apple Aluminium Keyboard (ANSI) in `Settings > Input Devices`.
+2. Quit `autokey` if it's already running.
+3. Backup existing settings in `~/.config/autokey`.
+4. Git clone this repository.
+5. Put this folder, named `autokey`, inside `~/.config` replacing existing
 `~/.config/autokey`. Even better solution is to clone this repository in a location where you keep your settings files and then symlink.
-5. Start `autokey` (preferably using the GUI menu instead of command line).
+6. Start `autokey` (preferably using the GUI menu instead of command line).
 
 ### Suggested commands
+
 ```bash
 # Clone keyboard to a location where you keep settings
 mkdir -p ~/toolbox
@@ -23,5 +25,4 @@ mv ~/.config/autokey ~/.config/autokey.bk
 
 # Create a symlink
 ln -s ~/toolbox/keyboard/autokey ~/.config/autokey
-
 ```
