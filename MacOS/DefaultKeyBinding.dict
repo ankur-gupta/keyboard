@@ -1,6 +1,13 @@
 {
+    /* For paragraphs */
     "\UF729"  = moveToBeginningOfParagraph:; // home
     "\UF72B"  = moveToEndOfParagraph:; // end
     "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home
-    "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+    "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end,
+
+    /* For iMessage on MacOS which treats message as a line */
+    "\UF729" = "moveToBeginningOfLine:";              /* Home */
+    "$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift+Home */
+    "\UF72B" = "moveToEndOfLine:";                    /* End */
+    "$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift+End */
 }
